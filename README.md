@@ -1,2 +1,2 @@
-# LOG4J minilLab
-log4j-minilab
+# LOG4J Mini Lab
+
