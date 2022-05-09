@@ -35,7 +35,23 @@ The log4shell-server already contains an incomplete LDAP server based on the [ma
 - try to login with an incorrect username and password.
 - See in the console what is logged
 - Check if we use a log4j version that is vulnerable (<2.15) 
-	- ​​./mvnw dependency:tree
+	- ​​[Hint1](/hints/a1/hint1.md)
 - Startup the log4shell-server and try to connect to to the server
-- If the console gives you a javax.naming.NamingException with and Root exception is java.lang.ClassCastException, you are on the correct spot.
+	- [Hint2](/hints/a1/hint2.md)
+- If the console gives you a `javax.naming.NamingException` with `Root exception is java.lang.ClassCastException`, than you are on the correct spot.
+
+## Assignment 2
+### Implement class Evil
+
+
+Implement class Evil so it will print “HACKED AT DEVOXXUK” when we load it using the LDAP string from before.
+
+- [Hint 1](/hints/a2/hint1.md)
+- [Hint 2](/hints/a2/hint2.md)
+- [Hint 3](/hints/a2/hint3.md)
+- [Hint 4](/hints/a2/hint4.md)
+- [Hint 5](/hints/a2/hint5.md)
+
+
+
 
