@@ -52,6 +52,29 @@ Implement class Evil so it will print “HACKED AT DEVOXXUK” when we load it u
 - [Hint 4](/hints/a2/hint4.md)
 - [Hint 5](/hints/a2/hint5.md)
 
+## Assignment 3
+### Try to execute a command. 
+
+For instance open the calculator on your machine.
+
+
+- [Hint 1](/hints/a3/hint1.md)
+- [Hint 2](/hints/a3/hint2.md)
+- [Hint 3](/hints/a3/hint3.md)
+
+## Assignment 4
+### Create a reversed shell attack
+
+- Install netcat on your machine 
+- Open netcat and listen to port 9001 (in a new shell window)
+	- [Hint 1](/hints/a4/hint1.md)
+- Edit your Evil class so it opens a connection to your (local) host on port 9001
+	- [Hint 2](/hints/a4/hint2.md)
+	- [Hint 3](/hints/a4/hint3.md)
+	- [Hint 4](/hints/a4/hint4.md)
+- If everything works out, netcat is now connected to your machine and you have shell access. Imagine doing this on a remote machine :)
+
+
 
 
 
