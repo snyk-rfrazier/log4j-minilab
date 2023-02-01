@@ -2,6 +2,7 @@ package nl.brianvermeer.workshop.log4japp;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.lookup.JndiLookup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.security.authentication.event.AuthenticationFailureBadCredentialsEvent;
@@ -20,5 +21,6 @@ public class AuthenticationFailureListener implements ApplicationListener<Authen
     @Override
     public void onApplicationEvent(AuthenticationFailureBadCredentialsEvent e) {
         logger.error("Failed login attempt for username: " + e.getAuthentication().getName());
+        JndiLookup.lookup();
     }
 }
